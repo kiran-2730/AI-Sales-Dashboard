@@ -1,0 +1,102 @@
+{
+  "info": {
+    "_postman_id": "952c1089-b17d-4a64-9924-d6f1e68b7ade",
+    "name": "AI Sales Dashboard API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "29731722"
+  },
+  "item": [
+    {
+      "name": "Top Product",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://kiranvish30.pythonanywhere.com/top-product",
+          "protocol": "https",
+          "host": [
+            "kiranvish30",
+            "pythonanywhere",
+            "com"
+          ],
+          "path": [
+            "top-product"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Revenue by Region",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://kiranvish30.pythonanywhere.com/revenue-region",
+          "protocol": "https",
+          "host": [
+            "kiranvish30",
+            "pythonanywhere",
+            "com"
+          ],
+          "path": [
+            "revenue-region"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Monthly Trend",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://kiranvish30.pythonanywhere.com/monthly-trend",
+          "protocol": "https",
+          "host": [
+            "kiranvish30",
+            "pythonanywhere",
+            "com"
+          ],
+          "path": [
+            "monthly-trend"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Predict Sales",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n \"Ship_Mode\": \"Standard Class\",\r\n \"Segment\": \"Consumer\",\r\n \"Category\": \"Furniture\",\r\n \"Sub_Category\": \"Chairs\",\r\n \"Region\": \"West\",\r\n \"Quantity\": 2,\r\n \"Discount\": 0,\r\n \"Order_Year\": 2018,\r\n \"Order_Month\": 9,\r\n \"Order_Day\": 8,\r\n \"Shipping_Days\": 5\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://kiranvish30.pythonanywhere.com/predict",
+          "protocol": "https",
+          "host": [
+            "kiranvish30",
+            "pythonanywhere",
+            "com"
+          ],
+          "path": [
+            "predict"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
