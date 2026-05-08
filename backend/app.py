@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 import pandas as pd
 import pickle
@@ -15,7 +15,7 @@ df = pd.read_csv("train.csv")
 
 @app.route("/")
 def home():
-    return "✅ AI Sales Insight Backend Running"
+    return render_template("index.html")
 
 
 @app.route("/top-product")
